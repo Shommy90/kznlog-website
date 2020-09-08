@@ -977,6 +977,10 @@ ul.navbar-nav {
   position: relative;
 }
 
+.how-it-works .container-wide > img {
+  z-index: -1;
+}
+
 .how-it-works h2 {
   color: #13274c;
   font-weight: 700;
@@ -1034,6 +1038,10 @@ p.how-it-works__text--small {
   background-color: rgba(19, 39, 76, 0.05);
   padding: 130px 0;
   position: relative;
+}
+
+.road-map > img {
+  z-index: -1;
 }
 
 .road-map .container {

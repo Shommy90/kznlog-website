@@ -380,6 +380,10 @@ ul.navbar-nav {
 
   .container-wide {
     position: relative;
+
+    > img {
+      z-index: -1;
+    }
   }
 
   h2 {
@@ -436,6 +440,10 @@ p.how-it-works__text--small {
   background-color: rgba($primary-color, 0.05);
   padding: 130px 0;
   position: relative;
+
+  > img {
+    z-index: -1;
+  }
 
   .container {
     max-width: 1400px;
