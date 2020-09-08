@@ -243,7 +243,7 @@ ul.navbar-nav {
 
   p {
     font-weight: $light;
-    letter-spacing: 0.4;
+    letter-spacing: 0.4px;
     line-height: 28px;
     text-align: center;
     color: $primary-color;
@@ -359,7 +359,7 @@ ul.navbar-nav {
 .pulsing__bg-radar--right {
   position: absolute;
   top: 120px;
-  right: -220px;
+  right: -250px;
   opacity: 0.5;
   height: 450px;
 }
@@ -372,6 +372,210 @@ ul.navbar-nav {
   letter-spacing: 3.4px;
   margin-bottom: 60px;
   text-align: center;
+}
+
+// HOW IT WORKS
+.how-it-works {
+  padding: 170px 0;
+
+  .container-wide {
+    position: relative;
+  }
+
+  h2 {
+    color: $primary-color;
+    font-weight: $bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  p {
+    color: $primary-color;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: $light;
+    letter-spacing: 0.4px;
+    text-align: center;
+  }
+}
+
+p.how-it-works__text--small {
+  font-size: 16px;
+}
+
+.how-it-works__radar--left {
+  width: 170px;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+}
+
+.how-it-works__radar--right {
+  width: 230px;
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+
+.how-it-works__arrows-holder {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  height: 53px;
+
+  img {
+    transform: rotate(90deg);
+  }
+}
+
+// ROAD MAP
+.road-map {
+  background-color: rgba($primary-color, 0.05);
+  padding: 130px 0;
+  position: relative;
+
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.road-map__radar--left {
+  width: 200px;
+  position: absolute;
+  left: -80px;
+  top: 250px;
+}
+
+.road-map__radar--right {
+  width: 280px;
+  position: absolute;
+  top: 80px;
+  right: -150px;
+}
+
+.road-map__subtitle {
+  font-size: 26px;
+  line-height: 37px;
+  letter-spacing: 2.6px;
+  text-align: center;
+  color: $primary-color;
+  font-weight: $regular;
+}
+
+.road-map__title {
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: $primary-color;
+  margin-bottom: 60px;
+  font-weight: $bold;
+}
+
+// carousel
+.carousel-control-next,
+.carousel-control-prev {
+  width: 54px;
+  height: 54px;
+  background: $yellow-color;
+  margin: auto;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.carousel-indicators li {
+  background-color: transparent;
+  text-indent: 0;
+  width: 60px;
+  height: 24px;
+  margin: 0;
+  margin-right: 25px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  opacity: 1;
+  font-weight: $light;
+  color: $primary-color;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.active {
+    color: $yellow-color;
+    font-weight: $medium;
+  }
+}
+
+.carousel-indicators {
+  top: 0;
+  bottom: auto;
+}
+
+.carousel-inner {
+  padding: 0 50px;
+}
+
+.carousel-item {
+  padding: 100px 0 0;
+}
+
+ul.carousel-item__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li.carousel-item__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+.carousel-item__list-item--month {
+  height: 105px;
+  background-image: url("../assets/yellow_bcg_graphic.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  p {
+    font-weight: $medium;
+    letter-spacing: 1.3px;
+    line-height: 20px;
+    color: $primary-color;
+  }
+}
+
+.carousel-item__list-item--content {
+  text-align: center;
+
+  h4 {
+    font-size: 14px;
+    color: $primary-color;
+    letter-spacing: 0.7px;
+    line-height: 16px;
+    margin-bottom: 15px;
+    font-weight: $bold;
+  }
+
+  p {
+    font-size: 14px;
+    color: $primary-color;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    font-weight: $light;
+  }
 }
 
 // PARTNERS
