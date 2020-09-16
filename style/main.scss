@@ -74,7 +74,7 @@ input {
 }
 
 header {
-  padding: 20px 0;
+  padding: 15px 0;
   background-color: rgba($primary-color, 0.9);
   position: fixed;
   width: 100%;
@@ -86,6 +86,11 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+
+.navbar {
+  display: flex;
+  padding: 0;
 }
 
 button.navbar-toggler {
@@ -111,8 +116,7 @@ a.logo {
 }
 
 .logo__img {
-  width: 183px;
-  height: 60px;
+  width: 160px;
 
   img {
     width: 100%;
@@ -175,7 +179,7 @@ ul.navbar-nav {
 // HERO
 .hero {
   height: 735px;
-  background-image: url("../assets/bg-hero.png");
+  background-image: url("../assets/bg-hero.jpg");
   background-size: cover;
 }
 
@@ -213,8 +217,8 @@ ul.navbar-nav {
 
 .hero__headline-title h1 {
   font-weight: $regular;
-  font-size: 70px;
-  line-height: 90px;
+  font-size: 60px;
+  line-height: 80px;
   letter-spacing: 5px;
   text-align: center;
   color: #f7f7f7;
@@ -260,7 +264,7 @@ ul.navbar-nav {
 // PULSING
 .pulsing {
   position: relative;
-  padding: 150px 0 165px;
+  padding: 120px 0 135px;
   background-color: rgba($primary-color, 0.05);
 
   > .container {
@@ -555,6 +559,7 @@ li.carousel-item__list-item {
 }
 
 .carousel-item__list-item--month {
+  width: 100%;
   height: 105px;
   background-image: url("../assets/yellow_bcg_graphic.svg");
   background-repeat: no-repeat;
@@ -562,6 +567,7 @@ li.carousel-item__list-item {
   background-position: center center;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 15px;
 
   p {
@@ -675,7 +681,30 @@ footer {
 
 // MEDIA QUERY
 
-@media (max-width: 1100px) {
+@media (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero__inner-bg {
+    padding: 0;
+    padding-bottom: 50px;
+    justify-content: flex-end;
+  }
+
+  .hero__headline-title h1 {
+    font-size: 46px;
+    line-height: 60px;
+  }
+
+  .pulsing__radar {
+    max-width: 550px;
+  }
+
   ul.navbar-nav {
     margin-right: 80px;
   }
@@ -687,6 +716,44 @@ footer {
   .pulsing__bg-radar--right,
   .road-map__radar--right {
     display: none;
+  }
+
+  .pulsing {
+    padding: 80px 0;
+  }
+
+  .pulsing__title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .how-it-works {
+    padding: 90px 0;
+  }
+
+  .road-map {
+    padding: 60px 0 30px;
+  }
+
+  .partners {
+    padding: 40px 0;
+  }
+
+  .partners h3 {
+    margin-bottom: 20px;
+  }
+
+  .how-it-works h2 {
+    font-size: 26px;
+  }
+
+  .road-map__subtitle {
+    font-size: 24px;
+  }
+
+  .road-map__title {
+    font-size: 26px;
+    margin-bottom: 30px;
   }
 }
 
