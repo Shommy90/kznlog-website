@@ -579,7 +579,7 @@
           <a href="#">
             <img class="footer__logo" src="assets/logo.svg" alt="logo footer" />
           </a>
-          <p class="footer__copyright">© 2019 KZNLOG All rights reserved</p>
+          <p class="footer__copyright">© <span id="year-footer"></span> KZNLOG All rights reserved</p>
         </div>
 
         <div class="footer__nav">
@@ -597,6 +597,10 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.getElementById("year-footer").innerHTML = new Date().getFullYear();
+    </script>
 
     <script>
       $(document).ready(function () {
