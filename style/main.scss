@@ -76,7 +76,7 @@ input {
 header {
   padding: 15px 0;
   background-color: rgba($primary-color, 0.9);
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: 99999;
 }
@@ -178,7 +178,7 @@ ul.navbar-nav {
 
 // HERO
 .hero {
-  height: 735px;
+  height: 70vh;
   background-image: url("../assets/bg-hero.jpg");
   background-size: cover;
 }
@@ -186,11 +186,11 @@ ul.navbar-nav {
 .hero__inner-bg {
   height: 100%;
   background-color: rgba($primary-color, 0.9);
-  padding: 200px 0 100px;
+  padding: 100px 0 20px;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   background-image: url("../assets/graphic_hero_bcg_transparent.svg");
   background-position: 900px -1000px;
   background-size: cover;
@@ -264,7 +264,7 @@ ul.navbar-nav {
 // PULSING
 .pulsing {
   position: relative;
-  padding: 120px 0 135px;
+  padding: 100px 0;
   background-color: rgba($primary-color, 0.05);
 
   > .container {
@@ -725,19 +725,21 @@ footer {
     font-size: 14px;
   }
 
-  .hero {
-    height: 100vh;
+  .hero__inner-bg {
+    padding-bottom: 50px;
   }
 
-  .hero__inner-bg {
-    padding: 0;
-    padding-bottom: 50px;
-    justify-content: flex-end;
+  .hero__headline-title {
+    height: 330px;
   }
 
   .hero__headline-title h1 {
     font-size: 46px;
     line-height: 60px;
+  }
+
+  .about {
+    padding: 50px 0;
   }
 
   .pulsing__radar {
@@ -758,16 +760,16 @@ footer {
   }
 
   .pulsing {
-    padding: 80px 0;
+    padding: 50px 0 80px;
   }
 
   .pulsing__title {
     font-size: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .how-it-works {
-    padding: 90px 0;
+    padding: 50px 0;
   }
 
   .road-map {
@@ -793,6 +795,42 @@ footer {
   .road-map__title {
     font-size: 26px;
     margin-bottom: 30px;
+  }
+
+  .hero__radar {
+    height: 300px;
+  }
+
+  .pulsing__content {
+    &.left.top {
+      min-height: 240px;
+    }
+
+    &.right.top {
+      min-height: 240px;
+    }
+  }
+
+  .pulsing__content__arrows-holder {
+    &.top {
+      top: -130px;
+    }
+
+    &.bottom {
+      bottom: -150px;
+    }
+  }
+
+  li.carousel-item__list-item {
+    margin-bottom: 25px;
+  }
+
+  .carousel-item {
+    padding-top: 50px;
+  }
+
+  footer {
+    padding: 10px 0;
   }
 }
 
